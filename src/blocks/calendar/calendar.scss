@@ -1,0 +1,19 @@
+.calendar {
+
+  max-width: 320px;
+  width: 100%;
+
+  padding-top: 19px;
+  padding-bottom: 19px;
+
+  border-radius: 4px;
+  border: 1px solid #1F204140;
+
+  @import '__wrapper/calendar__wrapper';
+  @import '__table/calendar__table';
+  @import '__header/calendar__header';
+  @import '__body/calendar__body';
+  @import '__cell/calendar__cell';
+  @import '__arrow/calendar__arrow';
+  @import '__command-line/calendar__command-line';
+}

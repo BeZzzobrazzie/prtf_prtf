@@ -1,0 +1,74 @@
+extends ./layout
+
+block append variables
+  -
+    title = "Test";
+
+    let palette = {
+      "Dark Shade 100%": {
+        color: "1F2041FF",
+        hex: "#1F2041",
+      },
+      "Dark Shade 75%": {
+        color: "1F2041BF",
+        hex: "#1F2041",
+      },
+      "Dark Shade 50%": {
+        color: "1F204180",
+        hex: "#1F2041",
+      },
+      "Dark Shade 25%": {
+        color: "1F204140",
+        hex: "#1F2041",
+      },
+      "Dark Shade 5%": {
+        color: "1F20410D",
+        hex: "#1F2041",
+      },
+      "Purple": {
+        color: "BC9CFF",
+        hex: "#BC9CFF",
+      },
+      "Green": {
+        color: "6FCF97",
+        hex: "#6FCF97",
+      },
+    } 
+
+block styles 
+  link(href=require('../styles/p-test.scss') rel='stylesheet')
+
+
+block content
+  .test 
+    .test__dropdown
+      .dropdown 
+        .dropdown-field 
+          .dropdown-field__text 123
+          .dropdown-field__button 
+            .button.button_expanded
+        .dropdown-floor(hidden)
+          p 123
+          p 456
+          p 789
+      
+      .dropdown 
+        .dropdown-field 
+          .dropdown-field__text 123
+          .dropdown-field__button 
+            .button.button_expanded
+        .dropdown-floor(hidden)
+          p 123
+          p 456
+          p 789
+
+
+
+
+
+block append scripts
+  script(src=require('../js/app.js'))
+  //script(src=require('../js/jquery-3.6.1.js'))
+  //script(src=require('../blocks/dropdown/dropdown.js'))
+  //script(src=require('../blocks/text-field-input/text-field-input.js'))
+

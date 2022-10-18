@@ -1,0 +1,16 @@
+&__btn-count {
+  height: 28px;
+  width: 28px;
+  border: 1px solid #1F204140;
+  border-radius: 15px;
+
+  font-family: 'Monserat Regular';
+  font-size: 18px;
+  color: #1F204140;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @import '_further/_further';
+}

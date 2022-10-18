@@ -1,0 +1,11 @@
+&__cell {
+  text-align: center;
+  height: 2.85rem;
+  width: 2.85rem;
+  padding: 0;
+  color: #1F204180;
+
+  @import '_days-of-week/calendar__cell_days-of-week';
+  @import '_not-current/calendar__cell_not-current';
+  @import '_today/calendar__cell_today';
+}

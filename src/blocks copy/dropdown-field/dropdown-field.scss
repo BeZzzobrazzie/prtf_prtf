@@ -1,0 +1,13 @@
+.dropdown-field {
+  width: 100%;
+
+  border-radius: 4px;
+  border: 1px solid #1F204140;
+
+  display: flex;
+  justify-content: space-between;
+
+  @import '__value/__value';
+  @import '__expand/__expand';
+  @import '_expanded/_expanded';
+}

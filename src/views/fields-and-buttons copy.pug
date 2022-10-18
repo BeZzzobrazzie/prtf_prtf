@@ -1,0 +1,111 @@
+extends ./layout
+
+block append variables
+  -
+    title = "Fields and buttons";
+
+block styles 
+  link(href=require('../styles/p-fields-and-buttons.scss') rel='stylesheet')
+
+
+block content
+  .fields-and-buttons
+    .container
+      .fields-and-buttons__wrap
+
+        .fields-and-buttons__text-field-demo
+          .text-field-demo
+            label.h3(for="text-field-input") text field 
+            p.text-field-sublabel Default
+            .text-field-demo__text-field-input
+              input.text-field-input(type="text" id="text-field-input" value="Email")
+      
+        .fields-and-buttons__text-field-demo
+          .text-field-demo
+            label.h3(for="text-field-input-hover-focus") text field 
+            p.text-field-sublabel Hover / Focus
+            .text-field-demo__text-field-input
+              input.text-field-input.text-field-input_status_hover-focus(type="text" id="text-field-input-hover-focus" value="This is pretty awesome")
+
+
+        .fields-and-buttons__dropdown
+          .list-dropdown
+            .dropdown
+              label.h3 Dropdown
+              .dropdown__dropdown-field
+                .dropdown-field
+                  .dropdown-field__value
+                    p.body-text Сколько гостей
+                  .dropdown-field__expand
+                    p.material-icons expand_more
+            .dropdown-floor(hidden)
+              .dropdown__list
+                .dropdown__row
+                  .dropdown__row-text
+                    p.h3 Взрослые
+                  .dropdown__count-group 
+                    .dropdown__btn-count.dropdown__btn-count_minus -
+                    .dropdown__count.h3 0
+                    .dropdown__btn-count.dropdown__btn-count_further.dropdown__btn-count_plus +
+                .dropdown__row
+                  .dropdown__row-text
+                    p.h3 Дети
+                  .dropdown__count-group 
+                    .dropdown__btn-count.dropdown__btn-count_minus -
+                    .dropdown__count.h3 0
+                    .dropdown__btn-count.dropdown__btn-count_further.dropdown__btn-count_plus +
+                .dropdown__row
+                  .dropdown__row-text
+                    p.h3 Младенцы
+                  .dropdown__count-group 
+                    .dropdown__btn-count.dropdown__btn-count_minus -
+                    .dropdown__count.h3 0
+                    .dropdown__btn-count.dropdown__btn-count_further.dropdown__btn-count_plus +
+                .dropdown__command-line
+                  .h3.dropdown__command.dropdown__command_clear Очистить
+                  .h3.dropdown__command.dropdown__command_apply Применить
+
+        .text-field.fields-and-buttons__text-field
+          label.h3.text-field__label(for="text-field") masked text field
+          input.text-field__input.text-field__masked-text(type="date" id="text-field" value="Email")
+
+        .fields-and-buttons__date-dropdown
+          .date-dropdown
+            .dropdown-roof
+              .dropdown
+                label.h3 Date Dropdown
+                .dropdown__dropdown-field
+                  .dropdown-field
+                    .dropdown-field__value
+                      p.body-text ДД.ММ.ГГГГ
+                    .dropdown-field__expand
+                      p.material-icons expand_more
+              .dropdown
+                label.h3 Date Dropdown
+                .dropdown__dropdown-field
+                  .dropdown-field
+                    .dropdown-field__value
+                      p.body-text 19.08.2019
+                    .dropdown-field__expand
+                      p.material-icons expand_more
+            .dropdown-floor(hidden)
+              .calendar
+                .calendar__wrapper
+                  .calendar__header
+                    p.material-icons.calendar__arrow.calendar__arrow_back arrow_back
+                    p.h2.calendar__month-and-year Август 2019
+                    p.material-icons.calendar__arrow.calendar__arrow_forward arrow_forward
+                  .calendar__body 
+
+                  .calendar__command-line 
+                    .command-line 
+                      .h3.command-line__command Очистить
+                      .h3.command-line__command Применить
+
+
+
+block append scripts
+  script(src=require('../blocks/text-field-input/text-field-input.js'))
+  //script(src=require('../blocks/dropdown/dropdown.js'))
+  script(src=require('../blocks/dropdown-field/dropdown-field.js'))
+  script(src=require('../blocks/calendar/calendar.js'))

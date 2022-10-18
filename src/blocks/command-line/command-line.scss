@@ -1,0 +1,6 @@
+.command-line {
+  display: flex;
+  justify-content: space-between;
+  
+  @import '__command/_command';
+}

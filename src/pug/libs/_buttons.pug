@@ -1,0 +1,10 @@
+mixin btn(text="Button", cls="primary", type="button")
+  button.btn(type=`${type}` class= `btn-${cls}`)= text 
+
+mixin btn-group(values, cls)
+  .btn-group(role="group")
+    if block
+      block
+    else 
+      each value in values
+        +btn(value, cls)
