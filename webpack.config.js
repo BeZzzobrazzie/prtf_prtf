@@ -9,9 +9,8 @@ module.exports = {
     //index2: './src/long/index2.pug',
 
     index: './src/views/index.pug',      // output index.html
-    "colors-and-fonts": "./src/views/colors-and-fonts.pug",
-    "fields-and-buttons": "./src/views/fields-and-buttons.pug",
-    "test": "./src/views/test.pug",
+    'main': './src/views/main.pug',
+    'test': './src/views/test.pug',
   },
   stats: {
 

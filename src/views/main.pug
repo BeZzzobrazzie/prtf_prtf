@@ -1,0 +1,55 @@
+extends ./layout
+
+block append variables
+  -
+    title = "Main";
+
+
+block styles 
+  link(href=require("../styles/p-main.scss") rel="stylesheet")
+
+
+block content
+  .main 
+    .container 
+      header.header 
+        .header__wrapper 
+          .avatar
+            img.avatar__photo(src=require("../images/image-one.jpg"))
+            .avatar__h1
+              h1.h1 Laura Davies
+            .avatar__subtitle
+              .subtitle Graphic Designer
+          .contact-and-follow
+            .contact
+              .contact__header 
+                .subtitle Contact
+              .contact__main
+                p.contact__text Street Name City, Zip
+                p.contact__text 00 432 012 3012 301
+                p.contact__text email.adress@gmail.it
+            .follow
+              .follow__header 
+                .subtitle Follow 
+              .social-networks 
+                .social-networks__card
+                  .social-networks__icon
+                  .social-networks__url
+                  .social-networks__username 
+                .social-networks__card
+                  .social-networks__icon
+                  .social-networks__url
+                  .social-networks__username 
+                .social-networks__card
+                  .social-networks__icon
+                  .social-networks__url
+                  .social-networks__username 
+
+
+
+
+
+block append scripts
+  script(src=require('../js/app.js'))
+
+
