@@ -1,0 +1,9 @@
+.social-networks {
+  display: flex;
+
+
+  @import '__card/social-networks__card';
+  @import '__icon/social-networks__icon';
+  @import '__url/social-networks__url';
+  @import '__username/social-networks__username';
+}
