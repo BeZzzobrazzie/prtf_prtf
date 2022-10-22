@@ -1,6 +1,6 @@
 .social-networks {
   display: flex;
-
+  justify-content: space-between;
 
   @import '__card/social-networks__card';
   @import '__icon/social-networks__icon';
