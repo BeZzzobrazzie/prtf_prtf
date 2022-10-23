@@ -1,8 +1,14 @@
+$color-base: #626166;
+$color-line: #a1a0a8;
+$color-h: #4d4d53;
+
+
 html {
   background-color: #FFF;
-  color: #1F2041BF;
+  color: $color-base;
   font-size: 14px;
   font-family: 'Montserrat-Regular', Arial, sans-serif;
+  line-height: 1.5;
 }
 
 div, input {

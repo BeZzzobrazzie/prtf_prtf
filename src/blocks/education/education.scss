@@ -1,0 +1,8 @@
+.education {
+  padding-bottom: 25px;
+
+  @import '__degree/education__degree';
+  @import '__university/education__university';
+  @import '__year/education__year';
+
+}

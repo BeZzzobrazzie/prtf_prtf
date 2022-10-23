@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid $color-line;
   padding-bottom: 50px;
 
   @import '__wrapper/header__wrapper';

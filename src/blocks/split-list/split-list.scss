@@ -1,0 +1,17 @@
+.split-list {
+  @import '__item/split-list__item';
+
+  &__key {
+    max-width: 120px;
+    flex-grow: 1;
+    //overflow: hidden;
+  }
+  &__separator {
+
+  }
+  &__value {
+    max-width: 200px;
+    flex-grow: 1;
+
+  }
+}

@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
 
+  padding: 0 10px;
+
   @import '__card/social-networks__card';
   @import '__icon/social-networks__icon';
   @import '__url/social-networks__url';
