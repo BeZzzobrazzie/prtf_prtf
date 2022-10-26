@@ -1,3 +1,23 @@
 &__big-col {
-  width: 60%;
+  //width: 60%;
+  max-width: 60%;
+
+}
+
+
+@media (max-width: 768px) {
+  &__big-col {
+    width: 100%;
+    max-width: 100%;
+
+  
+  }
+}
+@media (max-width: 640px) {
+  &__big-col {
+    width: 100%;
+    max-width: 100%;
+
+  
+  }
 }

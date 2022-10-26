@@ -1,5 +1,13 @@
 &__wrapper {
   display: flex;
   margin-top: 50px;
+  //flex-wrap: wrap;
+}
 
+@media (max-width: 768px) {
+  &__wrapper {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
 }
