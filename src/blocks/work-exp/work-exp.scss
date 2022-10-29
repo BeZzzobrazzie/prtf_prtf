@@ -1,8 +1,11 @@
 .work-exp {
-
+  margin-bottom: 90px;
 
   @import '__title/work-exp__title';
   @import '__subtitle/work-exp__subtitle';
   @import '__p/work-exp__p';
   @import '__ul/work-exp__ul';
+  @import '__list-item/work-exp__list-item';
+  @import '__separator/work-exp__separator';
 }
+

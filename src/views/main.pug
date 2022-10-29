@@ -7,6 +7,7 @@ block append variables
 
 block styles 
   link(href=require("../styles/p-main.scss") rel="stylesheet")
+  link(href=require("../fonts/icomoon/style.css") rel="stylesheet")
 
 
 block content
@@ -111,16 +112,40 @@ block content
               .named-block-text__content
                 .work-exp
                   .work-exp__title First Job Title
-                  .work-exp__subtitle Company name | Location | 2012 - 2013
+                  .work-exp__subtitle 
+                    | Company name 
+                    span.work-exp__separator |
+                    | Location 
+                    span.work-exp__separator |
+                    | 2012 - 2013
                   p.work-exp__p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum corporis hic temporibus itaque et culpa officiis odit repellendus? Animi eligendi enim voluptate numquam explicabo, dolorum tempora similique, praesentium reprehenderit illum suscipit, tenetur nisi voluptatibus esse officiis cupiditate quia amet? Odio nisi exercitationem assumenda libero ullam corporis deserunt explicabo earum alias. 
                   ul.work-exp__ul 
-                    li Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, quis.
-                    li Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, blanditiis.
-                    li Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab.
+                    li.work-exp__list-item Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, quis.
+                    li.work-exp__list-item Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, blanditiis.
+                    li.work-exp__list-item Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi minus ratione qui laborum vel nisi sed ipsum, quo id voluptates quis saepe eligendi at commodi!
+              .named-block-text__content
+                .work-exp
+                  .work-exp__title First Job Title
+                  .work-exp__subtitle 
+                    | Company name 
+                    span.work-exp__separator |
+                    | Location 
+                    span.work-exp__separator |
+                    | 2012 - 2013
+                  p.work-exp__p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum corporis hic temporibus itaque et culpa officiis odit repellendus? Animi eligendi enim voluptate numquam explicabo, dolorum tempora similique, praesentium reprehenderit illum suscipit, tenetur nisi voluptatibus esse officiis cupiditate quia amet? Odio nisi exercitationem assumenda libero ullam corporis deserunt explicabo earum alias. 
+                  ul.work-exp__ul 
+                    li.work-exp__list-item Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, quis.
+                    li.work-exp__list-item Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, blanditiis.
+                    li.work-exp__list-item Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi minus ratione qui laborum vel nisi sed ipsum, quo id voluptates quis saepe eligendi at commodi!
 
 
-
-
+              div 
+                .img-test-1 hi
+                .img-test-2 hi                
+                .img-test-3 hi                
+                .img-test-4 hi
+                .img-test-5 hi
+                .img-test-6 hi
 
 block append scripts
   script(src=require('../js/app.js'))
