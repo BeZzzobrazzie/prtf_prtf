@@ -1,4 +1,10 @@
 .follow {
-
+  //width: 37%;
+  flex-grow: 1;
   @import '__header/follow__header';
+
+  @media (max-width: 1024px) {
+    //width: 50%;
+    flex-grow: 1;
+  }
 }

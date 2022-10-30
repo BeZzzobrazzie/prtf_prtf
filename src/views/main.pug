@@ -21,7 +21,7 @@ block content
               h1.h1 Laura Davies
             .avatar__subtitle
               .subtitle Graphic Designer
-          .contact-and-follow
+          .header__contact-and-follow
             .contact
               .contact__header 
                 .subtitle Contact
@@ -34,17 +34,20 @@ block content
                 .subtitle Follow 
               .social-networks 
                 .social-networks__card
-                  .social-networks__icon
-                  .social-networks__url Telegram.com
-                  .social-networks__username username
+                  .social-networks__icon.social-networks__icon_telegram
+                  .social-networks__title
+                    .social-networks__url Telegram.com
+                    .social-networks__username username
                 .social-networks__card
-                  .social-networks__icon
-                  .social-networks__url GitHub.com
-                  .social-networks__username username
+                  .social-networks__icon.social-networks__icon_github
+                  .social-networks__title
+                    .social-networks__url GitHub.com
+                    .social-networks__username username
                 .social-networks__card
-                  .social-networks__icon
-                  .social-networks__url HeadHunter.ru
-                  .social-networks__username username
+                  .social-networks__icon.social-networks__icon_resume
+                  .social-networks__title
+                    .social-networks__url HeadHunter.ru
+                    .social-networks__username username
 
       main.main-content
         .main-content__wrapper 
@@ -138,14 +141,6 @@ block content
                     li.work-exp__list-item Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, blanditiis.
                     li.work-exp__list-item Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi minus ratione qui laborum vel nisi sed ipsum, quo id voluptates quis saepe eligendi at commodi!
 
-
-              div 
-                .img-test-1 hi
-                .img-test-2 hi                
-                .img-test-3 hi                
-                .img-test-4 hi
-                .img-test-5 hi
-                .img-test-6 hi
 
 block append scripts
   script(src=require('../js/app.js'))

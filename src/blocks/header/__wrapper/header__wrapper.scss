@@ -1,6 +1,9 @@
 &__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-
+  display: flex;
+  gap: 0 82px;
   padding-top: 50px;
+
+  @media (max-width: 768px) {
+    gap: 0 16px;
+  }
 }

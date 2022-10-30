@@ -1,11 +1,17 @@
 .social-networks {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  //gap: 10px 0;
 
-  padding: 0 10px;
+  //padding: 0 10px;
 
   @import '__card/social-networks__card';
   @import '__icon/social-networks__icon';
   @import '__url/social-networks__url';
   @import '__username/social-networks__username';
+  @import '__title/social-networks__title';
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 }

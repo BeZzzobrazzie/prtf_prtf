@@ -2,12 +2,13 @@
   //padding-bottom: 40px;
   //border-bottom: 2px solid black;
   margin-bottom: 50px;
+  
 }
 
 &__header::after {
   padding-top: 40px;
   content: "";
   display: block;
-  width: 90%;
+  //width: 90%;
   border-bottom: 2px solid $color-line;
 }

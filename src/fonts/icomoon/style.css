@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?5jbana');
-  src:  url('fonts/icomoon.eot?5jbana#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?5jbana') format('truetype'),
-    url('fonts/icomoon.woff?5jbana') format('woff'),
-    url('fonts/icomoon.svg?5jbana#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?cz12fp');
+  src:  url('fonts/icomoon.eot?cz12fp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?cz12fp') format('truetype'),
+    url('fonts/icomoon.woff?cz12fp') format('woff'),
+    url('fonts/icomoon.svg?cz12fp#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,6 +27,9 @@
 
 .icon-work:before {
   content: "\e903";
+}
+.icon-telegram1:before {
+  content: "\e904";
 }
 .icon-git-square:before {
   content: "\e900";

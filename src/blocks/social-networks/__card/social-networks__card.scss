@@ -1,7 +1,13 @@
 &__card {
   display: flex;
   flex-direction: column;
+  gap: 20px 20px;
   align-items: center;
   //align-content: space-between;
   //justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    flex-direction: row;
+    //gap: 0 30px;
+  }
 }

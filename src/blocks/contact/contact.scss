@@ -1,5 +1,12 @@
 .contact {
-  
+  //width: 18%;
+  //margin-right: 5%;
   @import '__header/contact__header';
   @import '__text/contact__text';
+  @import '__main/contact__main';
+
+  @media (max-width: 1024px) {
+    //width: 50%;
+    flex-grow: 1;
+  }
 }
