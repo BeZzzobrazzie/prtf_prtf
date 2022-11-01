@@ -3,6 +3,9 @@
   //border-bottom: 2px solid black;
   margin-bottom: 50px;
   
+  @media (max-width: 640px) {
+    margin-bottom: 15px;    
+  }
 }
 
 &__header::after {
@@ -11,4 +14,9 @@
   display: block;
   //width: 90%;
   border-bottom: 2px solid $color-line;
+
+  @media (max-width: 640px) {
+    padding-top: 5px;
+
+  }
 }

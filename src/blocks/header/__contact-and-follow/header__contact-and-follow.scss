@@ -11,8 +11,12 @@
     padding-top: 10px;
   }
   
-  @media (max-width: 768px) {
-    //flex-direction: column;
+  @media (max-width: 640px) {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  @media (max-width: 480px) {
+    gap: 45px 0;
   }
 
 }

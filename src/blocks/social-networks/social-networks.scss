@@ -14,4 +14,14 @@
   @media (max-width: 1024px) {
     flex-direction: column;
   }
+  @media (max-width: 768px) {
+    gap: 10px 0;
+  }
+  @media (max-width: 640px) {
+    flex-direction: row;
+  }
+  @media (max-width: 480px) {
+    flex-direction: column;
+    //gap: 0;
+  }
 }
