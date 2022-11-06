@@ -1,4 +1,8 @@
 &__value {
   width: 60%;
-
+  padding-left: 3%;
+  @media (max-width: 640px) and (min-width: 480px) {
+    width: 40%;
+    padding-left: 0;
+  }
 }

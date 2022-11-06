@@ -1,4 +1,8 @@
 &__separator {
   text-align: center;
-  width: 15%;
+  border-left: 1px solid $color-base;
+  height: 1rem;
+  width: 0;
+  margin: auto;
+
 }

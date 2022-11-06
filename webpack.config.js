@@ -18,7 +18,7 @@ module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, './dist/'),
+    path: path.join(__dirname, 'dist/'),
     publicPath: '/',
     filename: 'assets/js/[name].[contenthash:8].js',
     clean: true,

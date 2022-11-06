@@ -33,17 +33,17 @@ block content
               .follow__header 
                 .subtitle Follow 
               .social-networks 
-                .social-networks__card
+                a.social-networks__card(href="http://example.com/" target="_blank")
                   .social-networks__icon.social-networks__icon_telegram
                   .social-networks__title
                     .social-networks__url Telegram.com
                     .social-networks__username username
-                .social-networks__card
+                a.social-networks__card(href="http://example.com/" target="_blank")
                   .social-networks__icon.social-networks__icon_github
                   .social-networks__title
                     .social-networks__url GitHub.com
                     .social-networks__username username
-                .social-networks__card
+                a.social-networks__card(href="http://example.com/" target="_blank")
                   .social-networks__icon.social-networks__icon_resume
                   .social-networks__title
                     .social-networks__url HeadHunter.ru
@@ -90,15 +90,15 @@ block content
                 .split-list 
                   .split-list__item 
                     .split-list__key Deuche
-                    .split-list__separator |
+                    .split-list__separator
                     .split-list__value Motherlinguage
                   .split-list__item 
                     .split-list__key Italian
-                    .split-list__separator |
+                    .split-list__separator
                     .split-list__value Professional
                   .split-list__item 
                     .split-list__key French
-                    .split-list__separator |
+                    .split-list__separator
                     .split-list__value Basic Speaking
 
 
@@ -113,33 +113,36 @@ block content
               .named-block-text__header
                 h3.h3 work experience
               .named-block-text__content
-                .work-exp
-                  .work-exp__title First Job Title
-                  .work-exp__subtitle 
-                    | Company name 
-                    span.work-exp__separator |
-                    | Location 
-                    span.work-exp__separator |
-                    | 2012 - 2013
-                  p.work-exp__p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum corporis hic temporibus itaque et culpa officiis odit repellendus? Animi eligendi enim voluptate numquam explicabo, dolorum tempora similique, praesentium reprehenderit illum suscipit, tenetur nisi voluptatibus esse officiis cupiditate quia amet? Odio nisi exercitationem assumenda libero ullam corporis deserunt explicabo earum alias. 
-                  ul.work-exp__ul 
-                    li.work-exp__list-item Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, quis.
-                    li.work-exp__list-item Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, blanditiis.
-                    li.work-exp__list-item Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi minus ratione qui laborum vel nisi sed ipsum, quo id voluptates quis saepe eligendi at commodi!
-              .named-block-text__content
-                .work-exp
-                  .work-exp__title First Job Title
-                  .work-exp__subtitle 
-                    | Company name 
-                    span.work-exp__separator |
-                    | Location 
-                    span.work-exp__separator |
-                    | 2012 - 2013
-                  p.work-exp__p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum corporis hic temporibus itaque et culpa officiis odit repellendus? Animi eligendi enim voluptate numquam explicabo, dolorum tempora similique, praesentium reprehenderit illum suscipit, tenetur nisi voluptatibus esse officiis cupiditate quia amet? Odio nisi exercitationem assumenda libero ullam corporis deserunt explicabo earum alias. 
-                  ul.work-exp__ul 
-                    li.work-exp__list-item Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, quis.
-                    li.work-exp__list-item Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, blanditiis.
-                    li.work-exp__list-item Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi minus ratione qui laborum vel nisi sed ipsum, quo id voluptates quis saepe eligendi at commodi!
+                .named-block-text__work-exp
+                  .work-exp
+                    .work-exp__title First Job Title
+                    .work-exp__subtitle 
+                      | Company name 
+                      span.work-exp__separator |
+                      | Location 
+                      span.work-exp__separator |
+                      | 2012 - 2013
+                    p.work-exp__p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum corporis hic temporibus itaque et culpa officiis odit repellendus? Animi eligendi enim voluptate numquam explicabo, dolorum tempora similique, praesentium reprehenderit illum suscipit, tenetur nisi voluptatibus esse officiis cupiditate quia amet? Odio nisi exercitationem assumenda libero ullam corporis deserunt explicabo earum alias. 
+                    ul.work-exp__ul 
+                      li.work-exp__list-item Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, quis.
+                      li.work-exp__list-item Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, blanditiis.
+                      li.work-exp__list-item Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi minus ratione qui laborum vel nisi sed ipsum, quo id voluptates quis saepe eligendi at commodi!
+                .named-block-text__work-exp
+                  .work-exp
+                    .work-exp__title First Job Title
+                    .work-exp__subtitle 
+                      | Company name 
+                      span.work-exp__separator |
+                      | Location 
+                      span.work-exp__separator |
+                      | 2012 - 2013
+                    p.work-exp__p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum corporis hic temporibus itaque et culpa officiis odit repellendus? Animi eligendi enim voluptate numquam explicabo, dolorum tempora similique, praesentium reprehenderit illum suscipit, tenetur nisi voluptatibus esse officiis cupiditate quia amet? Odio nisi exercitationem assumenda libero ullam corporis deserunt explicabo earum alias. 
+                    ul.work-exp__ul 
+                      li.work-exp__list-item Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, quis.
+                      li.work-exp__list-item Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, blanditiis.
+                      li.work-exp__list-item Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi minus ratione qui laborum vel nisi sed ipsum, quo id voluptates quis saepe eligendi at commodi!
+
+      footer.footer
 
 
 block append scripts

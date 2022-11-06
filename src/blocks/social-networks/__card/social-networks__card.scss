@@ -6,6 +6,31 @@
   //align-content: space-between;
   //justify-content: space-between;
 
+  transition: color 0.4s ease-in-out;;
+
+
+  &:link {
+    color: unset;
+    outline: none;
+    text-decoration: none;
+  }
+  &:visited {
+    color: unset;
+
+  }
+  &:focus {
+    //outline: 2px solid #74434f;
+    color: #74434f;
+  }
+  &:hover {
+    color: #74434f;
+    //color: #626166;
+  }
+  &:active {
+    color: #753948;
+  }
+
+
   @media (max-width: 1024px) {
     flex-direction: row;
     //gap: 0 30px;

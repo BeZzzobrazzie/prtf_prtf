@@ -1,5 +1,5 @@
 .named-block-text {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   //padding-left: 10px;
   //padding-right: 10px;
 
@@ -21,5 +21,6 @@
   @import '__header/named-block-text__header';
   @import '__content/named-block-text__content';
   @import '__education/named-block-text__education';
+  @import '__work-exp/named-block-text__work-exp';
 }
 
