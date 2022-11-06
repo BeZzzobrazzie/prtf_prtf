@@ -310,15 +310,15 @@ template {
 
 @font-face {
   font-family: "Montserrat-Bold";
-  src: url(/assets/fonts/Montserrat-Bold.eot);
-  src: local("☺"), url(/assets/fonts/Montserrat-Bold.woff) format("woff"), url(/assets/fonts/Montserrat-Bold.ttf) format("truetype"), url(/assets/fonts/Montserrat-Bold.svg) format("svg");
+  src: url(../fonts/Montserrat-Bold.eot);
+  src: local("☺"), url(../fonts/Montserrat-Bold.woff) format("woff"), url(../fonts/Montserrat-Bold.ttf) format("truetype"), url(../fonts/Montserrat-Bold.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url(/assets/fonts/Montserrat-Regular.eot);
-  src: local("☺"), url(/assets/fonts/Montserrat-Regular.woff) format("woff"), url(/assets/fonts/Montserrat-Regular.ttf) format("truetype"), url(/assets/fonts/Montserrat-Regular.svg) format("svg");
+  src: url(../fonts/Montserrat-Regular.eot);
+  src: local("☺"), url(../fonts/Montserrat-Regular.woff) format("woff"), url(../fonts/Montserrat-Regular.ttf) format("truetype"), url(../fonts/Montserrat-Regular.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -326,7 +326,7 @@ template {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(/assets/fonts/MaterialIcons-Regular.ttf) format("truetype");
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/MaterialIcons-Regular.ttf) format("truetype");
 }
 html {
   background-color: #FFF;
@@ -512,6 +512,24 @@ p {
   flex-direction: column;
   gap: 20px 20px;
   align-items: center;
+  transition: color 0.4s ease-in-out;
+}
+.social-networks__card:link {
+  color: unset;
+  outline: none;
+  text-decoration: none;
+}
+.social-networks__card:visited {
+  color: unset;
+}
+.social-networks__card:focus {
+  color: #74434f;
+}
+.social-networks__card:hover {
+  color: #74434f;
+}
+.social-networks__card:active {
+  color: #753948;
 }
 @media (max-width: 1024px) {
   .social-networks__card {
@@ -628,8 +646,6 @@ p {
   border-left: 2px solid #a1a0a8;
   margin: 0 40px;
   width: 0;
-  height: 90px;
-  color: green;
 }
 .main-content__big-col {
   max-width: 60%;
@@ -648,7 +664,7 @@ p {
 }
 
 .named-block-text {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .named-block-text {
@@ -672,6 +688,9 @@ p {
     display: flex;
     justify-content: space-around;
   }
+}
+.named-block-text__work-exp {
+  margin-bottom: 40px;
 }
 
 .h3 {
@@ -726,23 +745,38 @@ p {
 }
 .split-list__item {
   display: flex;
+  align-items: center;
 }
 .split-list__key {
-  width: 25%;
+  width: 27%;
+  padding-right: 7%;
   overflow: hidden;
   font-family: "Montserrat-Bold";
 }
+@media (max-width: 640px) and (min-width: 480px) {
+  .split-list__key {
+    width: 40%;
+    padding-left: 0;
+  }
+}
 .split-list__separator {
   text-align: center;
-  width: 15%;
+  border-left: 1px solid #626166;
+  height: 1rem;
+  width: 0;
+  margin: auto;
 }
 .split-list__value {
   width: 60%;
+  padding-left: 3%;
+}
+@media (max-width: 640px) and (min-width: 480px) {
+  .split-list__value {
+    width: 40%;
+    padding-left: 0;
+  }
 }
 
-.work-exp {
-  margin-bottom: 90px;
-}
 .work-exp__title {
   font-family: "Montserrat-Bold";
   font-size: 16px;
@@ -759,4 +793,13 @@ p {
 .work-exp__separator {
   display: inline-block;
   margin: 0 10px;
+}
+
+footer {
+  height: 48px;
+}
+@media (max-width: 1024px) {
+  footer {
+    height: 16px;
+  }
 }
