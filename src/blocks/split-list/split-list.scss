@@ -1,5 +1,6 @@
 .split-list {
   width: 100%;
+  max-width: 300px;
 
   @import '__item/split-list__item';
   @import '__key/split-list__key';

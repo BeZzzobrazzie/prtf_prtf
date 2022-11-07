@@ -2,10 +2,10 @@
   width: 27%;
   padding-right: 7%;
   overflow: hidden;
-
   font-family: 'Montserrat-Bold';
+
   @media (max-width: 640px) and (min-width: 480px) {
-    width: 40%;
-    padding-left: 0;
+    width: 30%;
+    padding-right: 0;
   }
 }

@@ -512,7 +512,7 @@ p {
   flex-direction: column;
   gap: 20px 20px;
   align-items: center;
-  transition: color 0.4s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 .social-networks__card:link {
   color: unset;
@@ -742,6 +742,7 @@ p {
 
 .split-list {
   width: 100%;
+  max-width: 300px;
 }
 .split-list__item {
   display: flex;
@@ -755,8 +756,8 @@ p {
 }
 @media (max-width: 640px) and (min-width: 480px) {
   .split-list__key {
-    width: 40%;
-    padding-left: 0;
+    width: 30%;
+    padding-right: 0;
   }
 }
 .split-list__separator {
@@ -772,8 +773,8 @@ p {
 }
 @media (max-width: 640px) and (min-width: 480px) {
   .split-list__value {
-    width: 40%;
-    padding-left: 0;
+    width: 50%;
+    padding-left: 10%;
   }
 }
 
