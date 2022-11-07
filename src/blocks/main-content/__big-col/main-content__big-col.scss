@@ -1,23 +1,14 @@
 &__big-col {
-  //width: 60%;
-  max-width: 60%;
+  flex-basis: 60%;
+  flex-grow: 1;
 
-}
-
-
-@media (max-width: 768px) {
-  &__big-col {
-    width: 100%;
-    max-width: 100%;
-
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+  }
   
+  @media (max-width: 640px) {
+    flex-basis: 100%;
   }
 }
-@media (max-width: 640px) {
-  &__big-col {
-    width: 100%;
-    max-width: 100%;
 
-  
-  }
-}
+

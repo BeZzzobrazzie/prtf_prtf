@@ -1,15 +1,10 @@
 .named-block-text {
   margin-bottom: 30px;
-  //padding-left: 10px;
-  //padding-right: 10px;
 
   @media (max-width: 768px) {
-    //width: 50%;
-    padding-left: 15px;
-    padding-right: 15px;
+
   }
   @media (max-width: 640px) {
-    //width: 50%;
     padding-left: 0;
     padding-right: 0;
 
@@ -22,5 +17,9 @@
   @import '__content/named-block-text__content';
   @import '__education/named-block-text__education';
   @import '__work-exp/named-block-text__work-exp';
+  @import '_a/named-block-text_a';
+  @import '_b/named-block-text_b';
+  @import '_c/named-block-text_c';
+  
 }
 

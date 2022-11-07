@@ -17,6 +17,11 @@
     border-radius: 50%;
 
     margin-right: 15px;
+
+    @media (max-width: 640px) and (min-width: 480px) {
+      margin-left: 15px;
+    }
+
   }
 }
 

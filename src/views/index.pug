@@ -2,16 +2,147 @@ extends ./layout
 
 block append variables
   -
-    title = "Main page";
+    title = "Портфолио";
+
+
+block styles 
+  link(href=require("../styles/p-main.scss") rel="stylesheet")
+  link(href=require("../fonts/icomoon/style.css") rel="stylesheet")
 
 
 block content
-  a(href="main.html") main.pug
-  br
-  a(href="test.html") test.pug
-  br
-  p zzz
+  .main 
+    .container 
+      header.header 
+        .header__wrapper 
+          .avatar
+            img.avatar__photo(src=require("../images/image-one.jpg"))
+            .avatar__h1
+              h1.h1 Климов Никита
+            .avatar__subtitle
+              .subtitle Веб-верстальщик
+          .header__contact-and-follow
+            .contact
+              .contact__header 
+                .subtitle Контакты
+              .contact__main
+                p.contact__text Россия, г. Калуга
+                //p.contact__text 00 432 012 3012 301
+                p.contact__text shiizzzaa@gmail.com
+            .follow
+              .follow__header 
+                .subtitle Follow 
+              .social-networks 
+                a.social-networks__card(href="https://t.me/bezzzobrazie" target="_blank")
+                  .social-networks__icon.social-networks__icon_telegram
+                  .social-networks__title
+                    .social-networks__url Telegram.com
+                    .social-networks__username @bezzzobrazie
+                a.social-networks__card(href="https://github.com/BeZzzobrazzie" target="_blank")
+                  .social-networks__icon.social-networks__icon_github
+                  .social-networks__title
+                    .social-networks__url GitHub.com
+                    .social-networks__username BeZzzobrazzie
+                a.social-networks__card(href="https://kaluga.hh.ru/resume/73294a9eff090ba7180039ed1f385878437374" target="_blank")
+                  .social-networks__icon.social-networks__icon_resume
+                  .social-networks__title
+                    .social-networks__url HeadHunter.ru
+                    .social-networks__username username
+
+      main.main-content
+        .main-content__wrapper 
+          .main-content__small-col
+            .named-block-text.named-block-text_a
+              .named-block-text__header
+                h3.h3 образование
+              .named-block-text__content
+                .named-block-text__education
+                  .education 
+                    .education__degree Степень Бакалавра
+                    .education__university Университет им. К.Э. Циолковского | Калуга
+                    .education__prof 09.03.02 Информационные системы и технологии
+                    .education__year 2018 - 2022
+                  .education 
+                    .education__degree Степень Магистра
+                    .education__university Университет им. К.Э. Циолковского | Калуга
+                    .education__prof 44.04.01 Педагогическая деятельность в образовательных организациях
+                    .education__year 2022 - по настоящее время
+
+            .named-block-text.named-block-text_b
+              .named-block-text__header
+                h3.h3 навыки
+              .named-block-text__content
+                ul.big-ul
+                  li.big-ul__item Html / Pug
+                  li.big-ul__item Css / Scss
+                  li.big-ul__item JavaScript
+                  li.big-ul__item Webpack
+                  li.big-ul__item Git / GitHub
+                  li.big-ul__item БЭМ
+                  li.big-ul__item Linux / Windows
+
+
+            .named-block-text.named-block-text_c
+              .named-block-text__header
+                h3.h3 languages
+              .named-block-text__content
+                .split-list 
+                  .split-list__item 
+                    .split-list__key Deuche
+                    .split-list__separator
+                    .split-list__value Motherlinguage
+                  .split-list__item 
+                    .split-list__key Italian
+                    .split-list__separator
+                    .split-list__value Professional
+                  .split-list__item 
+                    .split-list__key French
+                    .split-list__separator
+                    .split-list__value Basic Speaking
+          .main-content__vl
+          .main-content__big-col
+            .named-block-text 
+              .named-block-text__header
+                h3.h3 profile
+              .named-block-text__content
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus reprehenderit, iste tenetur optio odio aspernatur suscipit quas quaerat dicta. Fugiat perferendis maxime adipisci officia repellendus vel necessitatibus illo ut itaque iure libero velit ducimus assumenda provident soluta obcaecati impedit harum odit vitae doloribus, optio temporibus nihil. Magni nam nulla, illum esse voluptate adipisci provident doloremque ex accusamus eos, assumenda ea, maiores soluta consequuntur. Vero provident voluptas ipsam facilis debitis saepe facere ad praesentium ea, illo eum ipsa nisi a excepturi modi atque nam est placeat, aut ut officiis quia architecto tempore. Ex perspiciatis expedita voluptatum neque consequuntur eaque eveniet veniam.
+            .named-block-text 
+              .named-block-text__header
+                h3.h3 work experience
+              .named-block-text__content
+                .named-block-text__work-exp
+                  .work-exp
+                    .work-exp__title First Job Title
+                    .work-exp__subtitle 
+                      | Company name 
+                      span.work-exp__separator |
+                      | Location 
+                      span.work-exp__separator |
+                      | 2012 - 2013
+                    p.work-exp__p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum corporis hic temporibus itaque et culpa officiis odit repellendus? Animi eligendi enim voluptate numquam explicabo, dolorum tempora similique, praesentium reprehenderit illum suscipit, tenetur nisi voluptatibus esse officiis cupiditate quia amet? Odio nisi exercitationem assumenda libero ullam corporis deserunt explicabo earum alias. 
+                    ul.work-exp__ul 
+                      li.work-exp__list-item Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, quis.
+                      li.work-exp__list-item Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, blanditiis.
+                      li.work-exp__list-item Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi minus ratione qui laborum vel nisi sed ipsum, quo id voluptates quis saepe eligendi at commodi!
+                .named-block-text__work-exp
+                  .work-exp
+                    .work-exp__title First Job Title
+                    .work-exp__subtitle 
+                      | Company name 
+                      span.work-exp__separator |
+                      | Location 
+                      span.work-exp__separator |
+                      | 2012 - 2013
+                    p.work-exp__p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum corporis hic temporibus itaque et culpa officiis odit repellendus? Animi eligendi enim voluptate numquam explicabo, dolorum tempora similique, praesentium reprehenderit illum suscipit, tenetur nisi voluptatibus esse officiis cupiditate quia amet? Odio nisi exercitationem assumenda libero ullam corporis deserunt explicabo earum alias. 
+                    ul.work-exp__ul 
+                      li.work-exp__list-item Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, quis.
+                      li.work-exp__list-item Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, blanditiis.
+                      li.work-exp__list-item Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi minus ratione qui laborum vel nisi sed ipsum, quo id voluptates quis saepe eligendi at commodi!
+
+      footer.footer
 
 
 block append scripts
-  script(src=require('../js/app.js'))
+
+
+

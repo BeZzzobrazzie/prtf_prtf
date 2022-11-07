@@ -1,11 +1,11 @@
 .avatar {
-  width: 30%;
+  flex-basis: 30%;
 
   @import '__photo/avatar__photo';
   @import '__h1/avatar__h1';
   @import '__subtitle/avatar__subtitle';
 
   @media (max-width: 768px) {
-    width: auto;
+    flex-basis: auto;
   }
 }

@@ -1,0 +1,7 @@
+&_a {
+  grid-area: a;
+
+  @media (max-width: 768px) and (min-width: 640px) {
+    padding-right: 40px;
+  }
+}
