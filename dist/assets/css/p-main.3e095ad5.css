@@ -340,10 +340,6 @@ div, input {
   box-sizing: border-box;
 }
 
-p {
-  margin: 0;
-}
-
 .main {
   background-color: #e8e8e8;
 }
