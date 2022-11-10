@@ -323,11 +323,64 @@ template {
   font-style: normal;
 }
 @font-face {
-  font-family: "Material Icons";
+  font-family: "icomoon";
+  src: url(../fonts/icomoon.eot?v24nz3);
+  src: url(../fonts/icomoon.eot?v24nz3#iefix) format("embedded-opentype"), url(../fonts/icomoon.ttf?v24nz3) format("truetype"), url(../fonts/icomoon.woff?v24nz3) format("woff"), url(../fonts/icomoon.svg?v24nz3#icomoon) format("svg");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/MaterialIcons-Regular.ttf) format("truetype");
+  font-display: block;
 }
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-telegram:before {
+  content: "\e900";
+}
+
+.icon-email-svgrepo-com:before {
+  content: "\e902";
+}
+
+.icon-location-point-svgrepo-com:before {
+  content: "\e903";
+}
+
+.icon-habr:before {
+  content: "\e901";
+  color: #77a2b6;
+}
+
+.icon-profile:before {
+  content: "\e923";
+}
+
+.icon-envelop:before {
+  content: "\e945";
+}
+
+.icon-location2:before {
+  content: "\e948";
+}
+
+.icon-user-tie:before {
+  content: "\e976";
+}
+
+.icon-github:before {
+  content: "\eab0";
+}
+
 html {
   background-color: #FFF;
   color: #626166;
@@ -466,10 +519,51 @@ div, input {
     padding-top: 5px;
   }
 }
+.contact__text {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
 .contact__main {
   display: flex;
   flex-direction: column;
-  gap: 20px 0;
+  gap: 10px 0;
+}
+.contact__row {
+  display: flex;
+  transition: color 0.3s ease-in-out;
+}
+.contact__row:link {
+  color: unset;
+  outline: none;
+  text-decoration: none;
+}
+.contact__row:visited {
+  color: unset;
+}
+.contact__row:focus {
+  color: #74434f;
+}
+.contact__row:hover {
+  color: #74434f;
+}
+.contact__row:active {
+  color: #753948;
+}
+.contact__icon_address:before {
+  content: "\e903";
+  font-family: "icomoon", sans-serif;
+  font-size: 20px;
+}
+.contact__icon_telegram:before {
+  content: "\e900";
+  font-family: "icomoon", sans-serif;
+  font-size: 20px;
+}
+.contact__icon_email:before {
+  content: "\e902";
+  font-family: "icomoon", sans-serif;
+  font-size: 20px;
 }
 @media (max-width: 1024px) {
   .contact {
@@ -483,7 +577,7 @@ div, input {
 .follow__header {
   padding-bottom: 40px;
   border-bottom: 2px solid #a1a0a8;
-  margin-bottom: 50px;
+  margin-bottom: 57px;
   text-align: center;
 }
 @media (max-width: 640px) {
@@ -502,6 +596,7 @@ div, input {
 .social-networks {
   display: flex;
   justify-content: space-around;
+  gap: 5px 0;
 }
 .social-networks__card {
   display: flex;
@@ -547,8 +642,8 @@ div, input {
   align-items: center;
   line-height: 40px;
 }
-.social-networks__icon_telegram:before {
-  content: "\e904";
+.social-networks__icon_habr:before {
+  content: "\e901";
   font-family: "icomoon", sans-serif;
   font-size: 40px;
 }
@@ -558,7 +653,7 @@ div, input {
   font-size: 40px;
 }
 .social-networks__icon_resume:before {
-  content: "\e903";
+  content: "\e923";
   font-family: "icomoon", sans-serif;
   font-size: 40px;
 }
@@ -589,7 +684,7 @@ div, input {
 }
 @media (max-width: 768px) {
   .social-networks {
-    gap: 10px 0;
+    gap: 15px 0;
   }
 }
 @media (max-width: 640px) {
@@ -600,6 +695,7 @@ div, input {
 @media (max-width: 480px) {
   .social-networks {
     flex-direction: column;
+    gap: 5px 0;
   }
 }
 

@@ -1,0 +1,28 @@
+&__row {
+  display: flex;
+  
+  
+  transition: color 0.3s ease-in-out;;
+
+
+  &:link {
+    color: unset;
+    outline: none;
+    text-decoration: none;
+  }
+  &:visited {
+    color: unset;
+
+  }
+  &:focus {
+    //outline: 2px solid #74434f;
+    color: #74434f;
+  }
+  &:hover {
+    color: #74434f;
+    //color: #626166;
+  }
+  &:active {
+    color: #753948;
+  }
+}

@@ -7,7 +7,7 @@ block append variables
 
 block styles 
   link(href=require("../styles/p-main.scss") rel="stylesheet")
-  link(href=require("../fonts/icomoon/style.css") rel="stylesheet")
+  //link(href=require("../fonts/icomoon/style.css") rel="stylesheet")
 
 
 block content
@@ -26,18 +26,24 @@ block content
               .contact__header 
                 .subtitle Контакты
               .contact__main
-                .contact__text Россия, г. Калуга
-                //p.contact__text 00 432 012 3012 301
-                .contact__text shiizzzaa@gmail.com
+                .contact__row 
+                  .contact__icon.contact__icon_address
+                  .contact__text Россия, г. Калуга
+                a.contact__row(href="https://t.me/bezzzobrazie" target="_blank")
+                  .contact__icon.contact__icon_telegram
+                  .contact__text @bezzzobrazie
+                a.contact__row(href="mailto:shiizzzaa@gmail.com")
+                  .contact__icon.contact__icon_email
+                  .contact__text shiizzzaa@gmail.com
             .follow
               .follow__header 
-                .subtitle Follow 
+                .subtitle Резюме 
               .social-networks 
-                a.social-networks__card(href="https://t.me/bezzzobrazie" target="_blank")
-                  .social-networks__icon.social-networks__icon_telegram
+                a.social-networks__card(href="https://career.habr.com/bezzzobrazzie" target="_blank")
+                  .social-networks__icon.social-networks__icon_habr
                   .social-networks__title
-                    .social-networks__url Telegram.com
-                    .social-networks__username @bezzzobrazie
+                    .social-networks__url Сareer.habr.com
+                    .social-networks__username bezzzobrazzie
                 a.social-networks__card(href="https://github.com/BeZzzobrazzie" target="_blank")
                   .social-networks__icon.social-networks__icon_github
                   .social-networks__title
@@ -47,7 +53,7 @@ block content
                   .social-networks__icon.social-networks__icon_resume
                   .social-networks__title
                     .social-networks__url HeadHunter.ru
-                    .social-networks__username username
+                    .social-networks__username Климов Н.
 
       main.main-content
         .main-content__wrapper 
