@@ -4,7 +4,8 @@
   @media (max-width: 768px) {
     flex-basis: 100%;
     display: grid;
-    grid-template-areas: "a a b" "c c b";
+    grid-template-columns: 1fr 1fr 1fr;
+
   }
 
   @media (max-width: 640px) {
